@@ -40,8 +40,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.get('/cards', function(req, res) {
-  res.send(cards)
-})
+// app.get('/cards', function(req, res) {
+//   res.send(cards)
+// })
 
 module.exports = app;
