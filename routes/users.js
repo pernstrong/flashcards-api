@@ -4,7 +4,7 @@ const cards = require("./../public/data.json")
 
 /* GET users listing. */
 // router.get('/', function(req, res, next) {
-//   res.send(cards);
+//   res.send('index');
 // });
 
 router.get('/cards', function(req, res) {

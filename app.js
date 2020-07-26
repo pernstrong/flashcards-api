@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
+// app.use('/', indexRouter);
 // app.use('/cards', usersRouter);
 
 // catch 404 and forward to error handler
@@ -40,8 +40,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.get('/cards', function(req, res) {
-  res.send(cards)
-})
+// app.get('/cards', function(req, res) {
+//   res.send(cards)
+// })
 
 module.exports = app;
