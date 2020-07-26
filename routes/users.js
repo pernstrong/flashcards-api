@@ -3,9 +3,9 @@ var router = express.Router();
 const cards = require("./../public/data.json")
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send(cards);
-});
+// router.get('/', function(req, res, next) {
+//   res.send('index');
+// });
 
 router.get('/cards', function(req, res) {
   res.send(cards)
