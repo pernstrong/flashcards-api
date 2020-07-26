@@ -26,7 +26,7 @@ const cards = require("./data.json")
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Flashcards' });
 });
 
 router.get('/cards', function(req, res, next) {
